@@ -26,10 +26,10 @@ app.get("/health", (req: Request, res: Response) => {
   });
 });
 
-app.get("/api/message", (req: Request, res: Response) => {
+app.get("/api", (req: Request, res: Response) => {
   res.json({
     message: "This is my second endpoint from OpenShift!",
-    version: "2.0.0",
+    version: "3.0.0",
   });
 });
 
