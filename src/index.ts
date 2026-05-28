@@ -11,6 +11,15 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
+
+app.get("/test", (req: Request, res: Response) => {
+  res.json({
+    message: "this is a new deplyoment!",
+    status: "running",
+    version: "2.0.0",
+  });
+});
+
 app.get("/health", (req: Request, res: Response) => {
   res.json({
     status: "ok",
