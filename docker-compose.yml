@@ -16,7 +16,7 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-prootpassword"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 10
 
   test-app:
     build: .
