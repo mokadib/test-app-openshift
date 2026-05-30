@@ -30,6 +30,7 @@ async function initializeDatabase() {
 
   await connection.execute(`
     INSERT INTO messages (text)
+    SELECT 'Hello this is a second record!'
     SELECT 'Hello from MySQL database!'
     WHERE NOT EXISTS (SELECT 1 FROM messages)
   `);
